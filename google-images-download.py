@@ -122,8 +122,8 @@ while i < len(search_keyword):
 	print ("Evaluating...")
 	search_term = search_keyword[i]
 	search = search_term.replace(' ', '%20')
-	train_dir_name = target_directory + 'train/' + search_term + ('-' + args.color if args.color else '')
-	vali_dir_name = target_directory + '/vali/' + search_term + ('-' + args.color if args.color else '')
+	train_dir_name = target_directory + '/train/' + search_term + ('-' + args.color if args.color else '')
+	vali_dir_name = target_directory + '/valid/' + search_term + ('-' + args.color if args.color else '')
 
 	# make a search keyword  directory
 	try:
